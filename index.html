@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-center align-item-center">
             <h1>EMI Calculator</h1>
         </div>
-       <div id="maindiv">
+       <div id="maindiv" class="container">
         <div class="box">
             <div class="row p-3">
                 <div class="col">
@@ -37,14 +37,14 @@
 
             <div class="row mt-4 p-3">
                 <div class="col">
-                    ₹50,000 <span><input oninput="rangeamount()" type="range" min="50000" max="1000000" id="rangeamount"></span> ₹40,00,000
+                    ₹50,000 <span><input oninput="rangeamount()" width="25" type="range" min="50000" max="1000000" id="rangeamount"></span> ₹40,00,000
 
                 </div>
                 <div class="col ">
-                    1 Year <span><input id="rangeyear" oninput="rangeyear()" type="range" min="1" max="5"></span> 5 Year
+                    1 Year <span><input id="rangeyear" oninput="rangeyear()" width="25" type="range" min="1" max="5"></span> 5 Year
                 </div>
                 <div class="col ">
-                    10.75% <span><input type="range" oninput="rangepercent()" id="rangeper" min="0" max="21"></span> 21%
+                    10.75% <span><input type="range" width="25" oninput="rangepercent()" id="rangeper" min="0" max="21"></span> 21%
                 </div>
             </div>
             <div >

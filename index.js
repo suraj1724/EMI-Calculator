@@ -22,6 +22,6 @@ function rangeamount() {
     var n = parseFloat(year) *12;
     var EMI =  p * r / (1- (Math.pow(1/(1 + r), n)));
     var result= document.getElementById("result");
-    result.innerHTML=`Your EMI is ${Math.round(EMI)} ₹ per month`;
+    result.innerHTML=`Your EMI is ₹ ${Math.round(EMI)}  per month`;
     
  }

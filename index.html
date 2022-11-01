@@ -19,43 +19,47 @@
         <div class="d-flex justify-content-center align-item-center">
             <h1>EMI Calculator</h1>
         </div>
-       <div id="maindiv" class="container">
-        <div class="box">
-            <div class="row p-3">
-                <div class="col">
+        <div id="maindiv" class="container">
+            <div class="box">
+                <div class="row p-3 flex-wrap">
                     <div class="col">
-                        Amount you need <span id="iamount">₹ 500000<span>
+                        <div class="col">
+                            Amount you need <span id="iamount">₹ 500000<span>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        for <span id="iyear">3</span> years
+                    </div>
+                    <div class="col">
+                        Interest Rate <span id="irate">12.5</span> %
                     </div>
                 </div>
-                <div class="col">
-                    for <span id="iyear">3</span> years
-                </div>
-                <div class="col">
-                    Interest Rate <span id="irate">12.5</span> %
-                </div>
-            </div>
 
-            <div class="row mt-4 p-3">
-                <div class="col">
-                    ₹50,000 <span><input oninput="rangeamount()" width="25" type="range" min="50000" max="1000000" id="rangeamount"></span> ₹40,00,000
+                <div class="row mt-2 p-1 flex-wrap">
+                    <div class="col">
+                        ₹50,000 <span><input oninput="rangeamount()" width="25" type="range" min="50000" max="1000000"
+                                id="rangeamount"></span> ₹40,00,000
 
+                    </div>
+                    <div class="col ">
+                        1 Year <span><input id="rangeyear" oninput="rangeyear()" width="25" type="range" min="1"
+                                max="5"></span> 5 Year
+                    </div>
+                    <div class="col ">
+                        10.75% <span><input type="range" width="25" oninput="rangepercent()" id="rangeper" min="0"
+                                max="21"></span> 21%
+                    </div>
                 </div>
-                <div class="col ">
-                    1 Year <span><input id="rangeyear" oninput="rangeyear()" width="25" type="range" min="1" max="5"></span> 5 Year
+                <div>
+                    <button onclick="calculaterate()" class="btn btn-primary " id="button1">Calculate</button>
                 </div>
-                <div class="col ">
-                    10.75% <span><input type="range" width="25" oninput="rangepercent()" id="rangeper" min="0" max="21"></span> 21%
+                <div>
+                    <h4 id="result"></h4>
                 </div>
-            </div>
-            <div >
-                <button onclick="calculaterate()" class="btn btn-primary " id="button1">Calculate</button>
-            </div>
-            <div >
-                <h4 id="result"></h4>
-            </div>
 
+            </div>
         </div>
-       </div>
 
 
     </div>
